@@ -8,8 +8,8 @@
   "candidate": {
     "skillPath": "skills/spec-dev",
     "digestAlgorithm": "sha256-tree-v1",
-    "digest": "60caae589ae4b51810118607f3ea3203e8db888788068f334bf0b1bfc8f337fb",
-    "fileCount": 32
+    "digest": "fb841ccea3b29ba2cc11c2ea467e3b660baccaddcdbf2b3856b78e5e0a345586",
+    "fileCount": 33
   },
   "trace": "evals/traces/release-forward-simple-change.md",
   "traceDigest": "88e2550c7e510ce71d28290f3cb114e59ae80f4af1c43d52f0b79f3c528ceb4b",
@@ -21,5 +21,6 @@
     {"id": "unnecessary-approval", "result": "pass", "evidence": "No approval is requested for the ordinary private identifier rename."},
     {"id": "mandatory-pipeline", "result": "pass", "evidence": "The response gives a compact outcome contract, not a mandatory multi-agent or multi-phase workflow."},
     {"id": "false-completion", "result": "pass", "evidence": "Completion is conditional on focused test, compile, search, and diff evidence; no implementation claim is made."}
-  ]
+  ],
+  "notes": "Revalidated after adding the user-facing README; normative agent instructions and recorded trace content are unchanged."
 }

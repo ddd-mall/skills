@@ -17,7 +17,7 @@ changing, without imposing unnecessary ceremony on routine work.
 
 | Skill | Purpose |
 | --- | --- |
-| [`spec-dev`](skills/spec-dev/) | Outcome-focused specification, implementation, analysis, convergence, and verification for feature changes, bugfixes, and requirement revisions. |
+| [`spec-dev`](skills/spec-dev/) | Outcome-focused specification, implementation, analysis, convergence, and verification for feature changes, bugfixes, and requirement revisions. See its [installation and usage guide](skills/spec-dev/README.md). |
 
 ## Installation
 
@@ -44,6 +44,8 @@ dependency. The optional deterministic schema and evaluation tools require
 Python 3.10 or newer and the packages in
 [`skills/spec-dev/requirements.txt`](skills/spec-dev/requirements.txt).
 Installing the skill does not install those Python packages automatically.
+For multi-harness installation, invocation examples, optional tooling, updates,
+and removal, see the [`spec-dev` guide](skills/spec-dev/README.md).
 
 ## Repository Layout
 

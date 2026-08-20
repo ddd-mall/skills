@@ -8,8 +8,8 @@
   "candidate": {
     "skillPath": "skills/spec-dev",
     "digestAlgorithm": "sha256-tree-v1",
-    "digest": "60caae589ae4b51810118607f3ea3203e8db888788068f334bf0b1bfc8f337fb",
-    "fileCount": 32
+    "digest": "fb841ccea3b29ba2cc11c2ea467e3b660baccaddcdbf2b3856b78e5e0a345586",
+    "fileCount": 33
   },
   "trace": "evals/traces/release-forward-converge.md",
   "traceDigest": "505b95cb051c647597f31cda68d38aa7563f45b135cc42e9bb1925a006baad07",
@@ -21,5 +21,6 @@
     {"id": "false-converged", "result": "pass", "evidence": "The output explicitly says the change has not converged."},
     {"id": "invented-evidence", "result": "pass", "evidence": "Both required checks are accurately recorded as not run."},
     {"id": "risk-acceptance", "result": "pass", "evidence": "Waiver requires authorized revision or explicit recorded acceptance of material residual risk."}
-  ]
+  ],
+  "notes": "Revalidated after adding the user-facing README; normative agent instructions and recorded trace content are unchanged."
 }
