@@ -13,15 +13,15 @@ evidence. They help coding agents work within the conventions, architecture,
 quality requirements, and authorization boundaries of the repository they are
 changing, without imposing unnecessary ceremony on routine work.
 
-## Status
+## Available Skills
 
-This repository is being initialized. `spec-dev` will be its first published
-skill. Install commands will become available after the skill package is added
-under `skills/spec-dev/` and passes its portability and behavioral checks.
+| Skill | Purpose |
+| --- | --- |
+| [`spec-dev`](skills/spec-dev/) | Outcome-focused specification, implementation, analysis, convergence, and verification for feature changes, bugfixes, and requirement revisions. |
 
 ## Installation
 
-After skills are published, list the available packages with:
+List the available skills with:
 
 ```bash
 npx skills add ddd-mall/skills --list
@@ -33,11 +33,17 @@ Install a specific skill for a supported coding agent:
 npx skills add ddd-mall/skills --skill <skill-name> --agent <agent> --yes
 ```
 
-For example, after `spec-dev` is published:
+For example, install `spec-dev` for Codex:
 
 ```bash
 npx skills add ddd-mall/skills --skill spec-dev --agent codex --yes
 ```
+
+The core workflow is instruction-only and does not require a runtime
+dependency. The optional deterministic schema and evaluation tools require
+Python 3.10 or newer and the packages in
+[`skills/spec-dev/requirements.txt`](skills/spec-dev/requirements.txt).
+Installing the skill does not install those Python packages automatically.
 
 ## Repository Layout
 
