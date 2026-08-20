@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "runId": "public-v0-1-analyze-2026-08-20",
+  "caseId": "analyze-conflict",
+  "caseDigest": "1cbe6765da1fd42401e8cafcd6d26d9b7f9d52dbf95e3cea04bb1c361ca81d82",
+  "mode": "release",
+  "agent": "OpenAI Codex public portability re-evaluation",
+  "candidate": {
+    "skillPath": "skills/spec-dev",
+    "digestAlgorithm": "sha256-tree-v1",
+    "digest": "fb841ccea3b29ba2cc11c2ea467e3b660baccaddcdbf2b3856b78e5e0a345586",
+    "fileCount": 33
+  },
+  "trace": "evals/traces/release-forward-analyze.md",
+  "traceDigest": "ace6192c728a188d3999d84f7719a377621f32ae850767209097b1e495c8f99b",
+  "worktreeDiff": "none",
+  "assertions": [
+    {"id": "read-only", "result": "pass", "evidence": "The output states that no artifacts or workspace files were changed."},
+    {"id": "conflict-ownership", "result": "pass", "evidence": "Separate blocking findings identify design.md and tasks.md as the owning downstream sources."},
+    {"id": "not-ready", "result": "pass", "evidence": "The verdict explicitly states that the change is not implementation-ready."},
+    {"id": "resolution-condition", "result": "pass", "evidence": "Every finding includes impact and a concrete resolution condition."},
+    {"id": "silent-selection", "result": "pass", "evidence": "The agent routes the controlling product decision instead of choosing terminal cancellation."},
+    {"id": "unauthorized-edit", "result": "pass", "evidence": "The assessment remains read-only and reports no workspace mutation."},
+    {"id": "style-failure", "result": "pass", "evidence": "All blockers concern contradictory behavior, traceability, or verification rather than formatting."}
+  ],
+  "notes": "Revalidated after adding the user-facing README; normative agent instructions and recorded trace content are unchanged."
+}
